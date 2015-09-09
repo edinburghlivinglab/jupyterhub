@@ -4,10 +4,14 @@
 # Distributed under the terms of the Modified BSD License.
 
 from tornado import web
+import tornado
 
 from .. import orm
 from ..utils import admin_only, url_path_join
 from .base import BaseHandler
+from os import listdir
+from os.path import isfile, join
+from random import shuffle
 
 
 class RootHandler(BaseHandler):
@@ -39,13 +43,35 @@ class RootHandler(BaseHandler):
 
 class HomeHandler(BaseHandler):
     """Render the user's home page."""
+    x = list()
+    mypath = "."
+    onlyfiles = [ f for f in listdir(".") if isfile(join(".",f)) and "txt" in f]
 
     @web.authenticated
     def get(self):
+        print("GETT")
+        
+        self.x = tornado.escape.json_encode(self.onlyfiles)
         html = self.render_template('home.html',
             user=self.get_current_user(),
+            test=self.x
         )
         self.finish(html)
+
+    @web.authenticated
+    def post(self):
+        a = self.get_argument("test", "")
+        shuffle(self.onlyfiles)
+        self.x = tornado.escape.json_encode(self.onlyfiles)
+        print(self.x)
+        print("post: " + str(a))
+        print("################")
+        html = self.render_template('home.html',
+            user=self.get_current_user(),
+            test=self.x
+        )
+        self.finish(html)
+        print("HAPPENED")
 
 
 class AdminHandler(BaseHandler):

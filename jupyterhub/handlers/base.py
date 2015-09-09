@@ -8,6 +8,8 @@ from datetime import datetime, timedelta
 from http.client import responses
 
 from jinja2 import TemplateNotFound
+import jinja2
+from jinja2.ext import autoescape
 
 from tornado.log import app_log
 from tornado.httputil import url_concat
@@ -342,6 +344,9 @@ class BaseHandler(RequestHandler):
 
     def get_template(self, name):
         """Return the jinja template object for a given name"""
+        # print("################")
+        # print(list(self.settings.keys()))
+        # self.settings['jinja2_env']  = jinja2.Environment(autoescape=True,extensions=['jinja2.ext.autoescape'])
         return self.settings['jinja2_env'].get_template(name)
 
     def render_template(self, name, **ns):

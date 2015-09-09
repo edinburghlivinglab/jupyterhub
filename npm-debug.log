@@ -1,0 +1,162 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'configurable-http-proxy' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose cache add [ 'configurable-http-proxy', null ]
+5 verbose cache add name=undefined spec="configurable-http-proxy" args=["configurable-http-proxy",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'configurable-http-proxy',
+6 verbose parsed url   path: 'configurable-http-proxy',
+6 verbose parsed url   href: 'configurable-http-proxy' }
+7 silly lockFile 96374a31-configurable-http-proxy configurable-http-proxy
+8 verbose lock configurable-http-proxy /home/francisco/.npm/96374a31-configurable-http-proxy.lock
+9 silly lockFile 96374a31-configurable-http-proxy configurable-http-proxy
+10 silly lockFile 96374a31-configurable-http-proxy configurable-http-proxy
+11 verbose addNamed [ 'configurable-http-proxy', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 80c28e41-configurable-http-proxy configurable-http-proxy@
+14 verbose lock configurable-http-proxy@ /home/francisco/.npm/80c28e41-configurable-http-proxy.lock
+15 silly addNameRange { name: 'configurable-http-proxy', range: '*', hasData: false }
+16 verbose request where is /configurable-http-proxy
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id cc890c50c7f4279d
+19 verbose url raw /configurable-http-proxy
+20 verbose url resolving [ 'https://registry.npmjs.org/', './configurable-http-proxy' ]
+21 verbose url resolved https://registry.npmjs.org/configurable-http-proxy
+22 verbose request where is https://registry.npmjs.org/configurable-http-proxy
+23 info trying registry request attempt 1 at 12:15:45
+24 http GET https://registry.npmjs.org/configurable-http-proxy
+25 http 200 https://registry.npmjs.org/configurable-http-proxy
+26 silly registry.get cb [ 200,
+26 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"3SL5NCYH772SJ6B1WU3N47XDY"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '13763',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Wed, 09 Sep 2015 11:15:46 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-lcy1128-LCY',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1441797345.708771,VS0,VE676',
+26 silly registry.get     vary: 'Accept' } ]
+27 silly addNameRange number 2 { name: 'configurable-http-proxy', range: '*', hasData: true }
+28 silly addNameRange versions [ 'configurable-http-proxy',
+28 silly addNameRange   [ '0.0.2',
+28 silly addNameRange     '0.0.3',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.2.2',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.4.0' ] ]
+29 verbose addNamed [ 'configurable-http-proxy', '0.4.0' ]
+30 verbose addNamed [ '0.4.0', '0.4.0' ]
+31 silly lockFile 02a151dc-configurable-http-proxy-0-4-0 configurable-http-proxy@0.4.0
+32 verbose lock configurable-http-proxy@0.4.0 /home/francisco/.npm/02a151dc-configurable-http-proxy-0-4-0.lock
+33 silly lockFile c2faf7c3-onfigurable-http-proxy-0-4-0-tgz https://registry.npmjs.org/configurable-http-proxy/-/configurable-http-proxy-0.4.0.tgz
+34 verbose lock https://registry.npmjs.org/configurable-http-proxy/-/configurable-http-proxy-0.4.0.tgz /home/francisco/.npm/c2faf7c3-onfigurable-http-proxy-0-4-0-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/configurable-http-proxy/-/configurable-http-proxy-0.4.0.tgz',
+35 verbose addRemoteTarball   'b2226a1b33ccec18502ed4631af195b21c1e6221' ]
+36 info retry fetch attempt 1 at 12:15:46
+37 verbose fetch to= /tmp/npm-6750-M2LLXhy9/registry.npmjs.org/configurable-http-proxy/-/configurable-http-proxy-0.4.0.tgz
+38 http GET https://registry.npmjs.org/configurable-http-proxy/-/configurable-http-proxy-0.4.0.tgz
+39 http 200 https://registry.npmjs.org/configurable-http-proxy/-/configurable-http-proxy-0.4.0.tgz
+40 silly lockFile c2faf7c3-onfigurable-http-proxy-0-4-0-tgz https://registry.npmjs.org/configurable-http-proxy/-/configurable-http-proxy-0.4.0.tgz
+41 silly lockFile c2faf7c3-onfigurable-http-proxy-0-4-0-tgz https://registry.npmjs.org/configurable-http-proxy/-/configurable-http-proxy-0.4.0.tgz
+42 silly lockFile 02a151dc-configurable-http-proxy-0-4-0 configurable-http-proxy@0.4.0
+43 silly lockFile 02a151dc-configurable-http-proxy-0-4-0 configurable-http-proxy@0.4.0
+44 silly lockFile 80c28e41-configurable-http-proxy configurable-http-proxy@
+45 silly lockFile 80c28e41-configurable-http-proxy configurable-http-proxy@
+46 silly resolved [ { version: '0.4.0',
+46 silly resolved     name: 'configurable-http-proxy',
+46 silly resolved     description: 'A configurable-on-the-fly HTTP Proxy',
+46 silly resolved     author: { name: 'Jupyter Developers' },
+46 silly resolved     license: 'BSD',
+46 silly resolved     repository:
+46 silly resolved      { type: 'git',
+46 silly resolved        url: 'git+https://github.com/jupyter/configurable-http-proxy.git' },
+46 silly resolved     dependencies:
+46 silly resolved      { commander: '~2',
+46 silly resolved        'http-proxy': '~1.11',
+46 silly resolved        winston: '~0.8',
+46 silly resolved        strftime: '~0.8' },
+46 silly resolved     devDependencies: { 'jasmine-node': '~2', jshint: '*', request: '~2', ws: '~0.4' },
+46 silly resolved     main: 'index.js',
+46 silly resolved     files:
+46 silly resolved      [ 'index.js',
+46 silly resolved        'lib/configproxy.js',
+46 silly resolved        'lib/trie.js',
+46 silly resolved        'bin/configurable-http-proxy' ],
+46 silly resolved     bin: { 'configurable-http-proxy': 'bin/configurable-http-proxy' },
+46 silly resolved     scripts:
+46 silly resolved      { jshint: 'jshint bin/ lib/ test/',
+46 silly resolved        test: 'jasmine-node --captureExceptions test' },
+46 silly resolved     gitHead: '958a19b7670ebb67f415979690e3c3ce40c1a6d4',
+46 silly resolved     bugs: { url: 'https://github.com/jupyter/configurable-http-proxy/issues' },
+46 silly resolved     homepage: 'https://github.com/jupyter/configurable-http-proxy#readme',
+46 silly resolved     _id: 'configurable-http-proxy@0.4.0',
+46 silly resolved     _shasum: 'b2226a1b33ccec18502ed4631af195b21c1e6221',
+46 silly resolved     _from: 'configurable-http-proxy@',
+46 silly resolved     _npmVersion: '2.10.1',
+46 silly resolved     _nodeVersion: '0.12.4',
+46 silly resolved     _npmUser: { name: 'minrk', email: 'benjaminrk@gmail.com' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: 'b2226a1b33ccec18502ed4631af195b21c1e6221',
+46 silly resolved        tarball: 'http://registry.npmjs.org/configurable-http-proxy/-/configurable-http-proxy-0.4.0.tgz' },
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/configurable-http-proxy/-/configurable-http-proxy-0.4.0.tgz' } ]
+47 info install configurable-http-proxy@0.4.0 into /usr/local/lib
+48 info installOne configurable-http-proxy@0.4.0
+49 verbose lib/node_modules/configurable-http-proxy unbuild
+50 verbose tar unpack /home/francisco/.npm/configurable-http-proxy/0.4.0/package.tgz
+51 silly lockFile 084e1b4e--modules-configurable-http-proxy tar:///usr/local/lib/node_modules/configurable-http-proxy
+52 verbose lock tar:///usr/local/lib/node_modules/configurable-http-proxy /home/francisco/.npm/084e1b4e--modules-configurable-http-proxy.lock
+53 silly lockFile 10c094e7-ble-http-proxy-0-4-0-package-tgz tar:///home/francisco/.npm/configurable-http-proxy/0.4.0/package.tgz
+54 verbose lock tar:///home/francisco/.npm/configurable-http-proxy/0.4.0/package.tgz /home/francisco/.npm/10c094e7-ble-http-proxy-0-4-0-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/configurable-http-proxy'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/configurable-http-proxy']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/configurable-http-proxy',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/configurable-http-proxy',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:107:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Linux 3.11.0-12-generic
+59 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "configurable-http-proxy"
+60 error cwd /home/francisco/TA/jupyterhub
+61 error node -v v0.10.33
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/configurable-http-proxy
+64 error fstream_path /usr/local/lib/node_modules/configurable-http-proxy
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/configurable-http-proxy'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:107:15)
+71 verbose exit [ 3, true ]

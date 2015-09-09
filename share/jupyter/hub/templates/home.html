@@ -18,6 +18,31 @@
       {% endif %}
     </div>
   </div>
+
+  <script type="text/javascript">
+      require(["jquery", "jhapi"], function ($, JHAPI) {
+      $(document).ready(
+          function()
+          {   console.log("TEST");
+              console.log(document.getElementById('foo'));
+              console.log(makeUL(test));
+              document.getElementById('foo').appendChild(makeUL(test));
+          }
+      );
+      set_test({{ test }});
+    });
+  </script>
+
+  <form onsubmit="show_test2()">
+      <select name="sort_ops" id="sl">
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+      </select>
+      <input type="submit">
+  </form>
+  <input type="button" id="test" value="Sort List (click again to reverse)"/>
+  <div id="foo"></div>
+
 </div>
 
 {% endblock %}
