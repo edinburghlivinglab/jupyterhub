@@ -32,7 +32,11 @@ function set_test(val)
 
 function show_test2(str)
 {   
+    console.log("PLEASE WORK*");
     var e = document.getElementById("sl");
+    console.log("#############");
+    console.log(e);
+    console.log("############");
     var strUser = e.options[e.selectedIndex].text;
 
     $.ajax({
@@ -66,12 +70,17 @@ function permute(arr){
 
 function makeUL(array) {
     // Create the list element:
-    var list = document.createElement('ul');
+    var list = document.createElement('div');
     list.setAttribute("id", "list");
+    list.setAttribute("class", "list-group")
 
     for(var i = 0; i < array.length; i++) {
         // Create the list item:
-        var item = document.createElement('li');
+        var item = document.createElement('a');
+        item.setAttribute("href", unescape("#"));
+        item.setAttribute("class", "list-group-item");
+        console.log(item);
+        console.log("succes");
 
         // Set its contents:
         item.appendChild(document.createTextNode(array[i]));
@@ -81,6 +90,7 @@ function makeUL(array) {
     }
 
     // Finally, return the constructed list:
+    console.log(list);
     return list;
 }
 
@@ -101,7 +111,7 @@ function sortUnorderedList(ul) {
         }
     );
 
-    var lis = ul.getElementsByTagName("LI");
+    var lis = ul.getElementsByTagName("a");
     var vals = [];
 
     for(var i = 0, l = lis.length; i < l; i++){

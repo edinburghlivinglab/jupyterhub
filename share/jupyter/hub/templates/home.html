@@ -20,21 +20,28 @@
   </div>
 
   <script type="text/javascript">
-      require(["jquery", "jhapi"], function ($, JHAPI) {
+      require(["jquery", "jhapi", "bootstrap"], function ($, JHAPI, bootstrap) {
+
       $(document).ready(
           function()
           {   console.log("TEST");
-              console.log(document.getElementById('foo'));
+              console.log(document.getElementById('tmp'));
               console.log(makeUL(test));
               document.getElementById('tmp').appendChild(makeUL(test));
           }
       );
+
+      // $(document).ready(function() {
+      //    $('.selectpicker').selectpicker();
+      // });
+
       set_test({{ test }});
+
     });
   </script>
 
   <form onsubmit="show_test2()">
-      <select name="sort_ops" id="sl">
+      <select name="sort_ops" id="sl"  class="selectpicker">
           <option value="1">Option 1</option>
           <option value="2">Option 2</option>
       </select>
@@ -43,7 +50,13 @@
   <input type="button" id="test" value="random shuffle"/>
   <div id="tmp"></div>
 
+
+
+
+
 </div>
+
+
 
 {% endblock %}
 

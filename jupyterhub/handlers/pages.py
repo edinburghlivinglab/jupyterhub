@@ -66,11 +66,11 @@ class HomeHandler(BaseHandler):
         print(self.x)
         print("post: " + str(a))
         print("################")
-        html = self.render_template('home.html',
-            user=self.get_current_user(),
-            test=self.x
-        )
-        self.finish(html)
+        # html = self.render_template('home.html',
+        #     user=self.get_current_user(),
+        #     test=self.x
+        # )
+        # self.finish(html)
         print("HAPPENED")
 
 
