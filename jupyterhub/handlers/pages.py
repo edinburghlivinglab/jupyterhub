@@ -45,12 +45,12 @@ class HomeHandler(BaseHandler):
     """Render the user's home page."""
     x = list()
     mypath = "."
-    onlyfiles = [ f for f in listdir(".") if isfile(join(".",f)) and "txt" in f]
+    onlyfiles = [ f for f in listdir(".") if isfile(join(".",f)) and "ipynb" in f]
+
 
     @web.authenticated
     def get(self):
-        print("GETT")
-        
+
         self.x = tornado.escape.json_encode(self.onlyfiles)
         html = self.render_template('home.html',
             user=self.get_current_user(),
