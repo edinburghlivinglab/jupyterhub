@@ -92,7 +92,7 @@ function makeUL(array, base, user, uname) {
         console.log("succes");
 
         // Set its contents:
-        item.appendChild(document.createTextNode(array[i]));
+        item.appendChild(document.createTextNode(array[i].replace(".ipynb", "")));
 
         // Add it to the list:
         list.appendChild(item);
