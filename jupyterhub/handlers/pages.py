@@ -45,7 +45,8 @@ class HomeHandler(BaseHandler):
     """Render the user's home page."""
     x = list()
     mypath = "."
-    onlyfiles = [ f for f in listdir("./dds-notebooks/notebooks") if isfile(join(".",f)) and "ipynb" in f]
+    onlyfiles = [ f for f in listdir("./dds-notebooks/notebooks") if  "ipynb" in f]
+    print (onlyfiles)
 
 
     @web.authenticated
