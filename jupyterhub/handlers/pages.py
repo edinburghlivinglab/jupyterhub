@@ -51,7 +51,7 @@ class HomeHandler(BaseHandler):
         self.mypath = "."
         self.onlyfiles = [ f for f in listdir(join("/home", 
                                                    self.get_current_user().name, 
-                                              "/dds-notebooks/notebooks")) 
+                                              "dds-notebooks/notebooks")) 
                                              if  bool(re.search("\w+.ipynb",f))]
         print(self.onlyfiles)
 
