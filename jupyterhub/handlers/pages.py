@@ -12,6 +12,7 @@ from .base import BaseHandler
 from os import listdir
 from os.path import isfile, join
 from random import shuffle
+import re
 
 
 class RootHandler(BaseHandler):
@@ -45,7 +46,7 @@ class HomeHandler(BaseHandler):
     """Render the user's home page."""
     x = list()
     mypath = "."
-    onlyfiles = [ f for f in listdir("./dds-notebooks/notebooks") if  "ipynb" in f]
+    onlyfiles = [ f for f in listdir("./dds-notebooks/notebooks") if  bool(re.search("\w+.ipynb",f))]
     print (onlyfiles)
 
 
