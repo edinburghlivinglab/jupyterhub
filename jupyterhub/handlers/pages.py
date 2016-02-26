@@ -46,7 +46,8 @@ class HomeHandler(BaseHandler):
     """Render the user's home page."""
     x = list()
     mypath = "."
-    onlyfiles = [ f for f in listdir("./dds-notebooks/notebooks") if  bool(re.search("\w+.ipynb",f))]
+    onlyfiles = [ f for f in listdir(os.path.join("/home", get_current_user().name, 
+                  "/dds-notebooks/notebooks")) if  bool(re.search("\w+.ipynb",f))]
     print (onlyfiles)
 
 
