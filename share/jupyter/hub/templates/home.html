@@ -9,7 +9,8 @@
       <a id="stop" class="btn btn-lg btn-danger">Stop My Server</a>
       {% endif %} -->
       <a id="start" class="btn btn-lg btn-success"
-        href="{{base_url}}user/{{user.name}}/tree/dds-notebooks/notebooks" 
+        href="{{base_url}}user/{{user.name}}/tree/dds-notebooks/notebooks"
+        onclick="window.location.href='{{base_url}}user/{{user.name}}';" 
       >
         Go to notebooks
       </a>
@@ -26,16 +27,22 @@
           function()
           {   console.log("TEST");
               console.log(document.getElementById('tmp'));
-              console.log(makeUL(test));
-              document.getElementById('tmp').appendChild(makeUL(test));
+              s = {{uname}};
+              m = s[0];
+              console.log(m);
+              console.log(makeUL(test, base, 'user', m));
+              document.getElementById('tmp').appendChild(makeUL(test, base, 'user', m));
           }
       );
 
       // $(document).ready(function() {
       //    $('.selectpicker').selectpicker();
       // });
+      s = {{uname}};
+      m = s[0];
+      console.log(m);
 
-      set_test({{ test }});
+      set_test({{ test }}, {{ base_url }}, 'user', m);
 
     });
   </script>

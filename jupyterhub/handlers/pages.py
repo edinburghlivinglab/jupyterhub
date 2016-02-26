@@ -53,7 +53,9 @@ class HomeHandler(BaseHandler):
     def get(self):
 
         self.x = tornado.escape.json_encode(self.onlyfiles)
+        uname = str(self.get_current_user().name)
         html = self.render_template('home.html',
+            uname=[uname],
             user=self.get_current_user(),
             test=self.x
         )

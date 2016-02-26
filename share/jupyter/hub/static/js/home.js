@@ -21,12 +21,21 @@ require(["jquery", "jhapi"], function ($, JHAPI) {
 
 /* Changes start here*/
 var test = []
+var base = ''
+var user = ''
+var uname = ''
 
-function set_test(val)
+function set_test(val, base, user, uname)
 {   console.log("FIRST");
     console.log(val);
     console.log("jup");
     test=val;
+    base=base;
+    user=user;
+    uname=uname;
+    console.log("2222222");
+    console.log(base);
+    console.log("2222222");
 }
 
 
@@ -68,7 +77,7 @@ function permute(arr){
     return x
 }
 
-function makeUL(array) {
+function makeUL(array, base, user, uname) {
     // Create the list element:
     var list = document.createElement('div');
     list.setAttribute("id", "list");
@@ -77,7 +86,7 @@ function makeUL(array) {
     for(var i = 0; i < array.length; i++) {
         // Create the list item:
         var item = document.createElement('a');
-        item.setAttribute("href", unescape("#"));
+        item.setAttribute("href", (base+user+"/"+uname+"/tree/dds-notebooks/notebooks/" + array[i]));
         item.setAttribute("class", "list-group-item");
         console.log(item);
         console.log("succes");
