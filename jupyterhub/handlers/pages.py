@@ -44,15 +44,16 @@ class RootHandler(BaseHandler):
 
 class HomeHandler(BaseHandler):
     """Render the user's home page."""
-    x = list()
-    mypath = "."
-    onlyfiles = [ f for f in listdir(join("/home", get_current_user().name, 
-                  "/dds-notebooks/notebooks")) if  bool(re.search("\w+.ipynb",f))]
-    print (onlyfiles)
-
 
     @web.authenticated
     def get(self):
+        self.x = list()
+        self.mypath = "."
+        self.onlyfiles = [ f for f in listdir(join("/home", 
+                                                   self.get_current_user().name, 
+                                              "/dds-notebooks/notebooks")) 
+                                             if  bool(re.search("\w+.ipynb",f))]
+        print(self.onlyfiles)
 
         self.x = tornado.escape.json_encode(self.onlyfiles)
         uname = str(self.get_current_user().name)
